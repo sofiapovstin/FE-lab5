@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Повстін С.О. ІП-24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ex1">
+    <div class="form">
+        <h1>Форма для заповнення</h1>
+        <form id="dataForm">
+            <input type="text" id="name" placeholder="ПІБ (Текст Т. Т.)" pattern="[А-ЯІЇЄҐA-Z][а-яіїєґ'a-z]+\s[А-ЯІЇЄҐA-Z]\.[А-ЯІЇЄҐA-Z]\." required>
+            <input type="number" id="variant" placeholder="Варіант (ЧЧ)" min="1" max="99" required>
+            <input type="text" id="group" placeholder="Група (ТТ-ЧЧ)" pattern="[А-ЯІЇЄҐA-Z]{2}-\d{2}" required>
+            <input type="text" id="faculty" placeholder="Факультет (ТТТТ)" pattern="[А-ЯІЇЄҐA-Z]+" required>
+            <input type="text" id="dob" placeholder="Дата народження (ЧЧ.ЧЧ.ЧЧЧЧ)" pattern="\d{2}\.\d{2}\.\d{4}" required>
+            <button type="submit" id="submit">Перевірити</button>
+        </form>
+    </div>
+    <div id="result" class="result"></div>
+</div>
+
+<div class="table">
+    <input type="color" id="colorPicker" title="Оберіть колір">
+    <table id="table"></table>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
